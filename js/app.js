@@ -2,6 +2,13 @@
 const codePostalInput = document.getElementById("code-postal");
 const communeSelect = document.getElementById("communeSelect");
 const validationButton = document.getElementById("validationButton");
+const dayAmount = document.getElementById("dayAmount");
+
+const divLatitude = document.getElementById("div-latitude");
+const divLongitude = document.getElementById("div-longitude");
+const divCumul = document.getElementById("div-cumul");
+const divVent = document.getElementById("div-vent");
+const divDirection = document.getElementById("div-direction");
 
 // Fonction pour effectuer la requête API des communes en utilisant le code postal
 async function fetchCommunesByCodePostal(codePostal) {
@@ -52,12 +59,15 @@ function displayCommunes(data) {
   }
 }
 // Fonction pour effectuer la requête API de météo en utilisant le code de la commune sélectionnée
-async function fetchMeteoByCommune(selectedCommune) {
+async function fetchMeteoByCommune(selectedCommune, day) {
   try {
-    const response = await fetch(
-      `https://api.meteo-concept.com/api/forecast/daily/0?token=4bba169b3e3365061d39563419ab23e5016c0f838ba282498439c41a00ef1091&insee=${selectedCommune}`
-    );
-    const data = await response.json();
+    let data = [];
+    for (let i = 0; i < day; i++) {
+      const response = await fetch(
+        `https://api.meteo-concept.com/api/forecast/daily/${i}?token=4bba169b3e3365061d39563419ab23e5016c0f838ba282498439c41a00ef1091&insee=${selectedCommune}`
+      );
+      data.push(await response.json());
+    }
     return data;
   } catch (error) {
     console.error("Erreur lors de la requête API:", error);
@@ -75,6 +85,7 @@ codePostalInput.addEventListener("input", async () => {
     try {
       const data = await fetchCommunesByCodePostal(codePostal);
       displayCommunes(data);
+      displayOptions();
     } catch (error) {
       console.error(
         "Une erreur est survenue lors de la recherche de la commune :",
@@ -90,7 +101,7 @@ validationButton.addEventListener("click", async () => {
   const selectedCommune = communeSelect.value;
   if (selectedCommune) { // si selectedCommune n'est pas vide
     try {
-      const data = await fetchMeteoByCommune(selectedCommune);
+      const data = await fetchMeteoByCommune(selectedCommune, dayAmount.value);
       createCard(data);
     } catch (error) {
       console.error("Erreur lors de la requête API meteoConcept:", error);
@@ -99,3 +110,11 @@ validationButton.addEventListener("click", async () => {
   }
 });
 
+function displayOptions() {
+  dayAmount.hidden = false;
+  divLatitude.hidden = false;
+  divLongitude.hidden = false;
+  divCumul.hidden = false;
+  divVent.hidden = false;
+  divDirection.hidden = false;
+}
