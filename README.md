@@ -10,6 +10,7 @@ Application météo en temps réel qui fournit les prévisions météorologiques
   - Coordonnées GPS (latitude/longitude)
   - Cumul de pluie
   - Données sur le vent (vitesse et direction)
+  - Graphique température max et min
 - Interface responsive et accessible
 - Design moderne avec vidéo de fond dynamique
 
