@@ -2,8 +2,6 @@
 
 Application météo en temps réel qui fournit les prévisions météorologiques pour les communes françaises.
 
-![Prévisualisation du projet](./favicon.png)
-
 ## Fonctionnalités ✨
 
 - Recherche par code postal pour trouver les communes correspondantes
