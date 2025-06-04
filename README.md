@@ -1,19 +1,34 @@
-# Instant-Weather
-## Exercice Javascript (V1)
+# Instant Weather 🌦️
 
-📝Lien du projet : https://princecorg.github.io/Instant-Weather/
+Application météo en temps réel qui fournit les prévisions météorologiques pour les communes françaises.
 
-Cet exercice a pour objectifs de :
+![Prévisualisation du projet](./favicon.png)
 
--	Utiliser une API conformément à sa documentation
--	Manipuler le DOM pour intégrer dynamiquement du contenu dans une page HTML
--	Interagir avec la mise en forme de la page Web via l’utilisation de JavaScript
+## Fonctionnalités ✨
 
-## Les api utilisées :
-- l'API de découpage administratif par commune : https://geo.api.gouv.fr/decoupage-administratif/communes
-- l'API météo de MétéoConcept : https://api.meteo-concept.com/
+- Recherche par code postal pour trouver les communes correspondantes
+- Affichage des prévisions météo sur 1 à 7 jours
+- Options personnalisables pour afficher des données supplémentaires :
+  - Coordonnées GPS (latitude/longitude)
+  - Cumul de pluie
+  - Données sur le vent (vitesse et direction)
+- Interface responsive et accessible
+- Design moderne avec vidéo de fond dynamique
 
-## Les contraintes :
-- La page sera responsive (avec ou sans media queries) et devra passer les validations HTML et CSS du W3C.
-- la page devra satisfaire aux exigences d’accessibilité de la norme WCAG AA 2.0
+## Technologies utilisées 💻
 
+- **Frontend**:
+  - HTML5, CSS3, JavaScript
+  - Bootstrap 5 pour le responsive design
+  - Font Awesome pour les icônes
+  - API Google Fonts (Roboto)
+
+- **API externes**:
+  - [API découpage administratif](https://geo.api.gouv.fr/decoupage-administratif/communes) pour la recherche des communes
+  - [API MétéoConcept](https://api.meteo-concept.com/) pour les données météorologiques
+
+## Installation et utilisation 🚀
+
+1. Clonez le dépôt :
+```bash
+git clone https://github.com/PrinceCorg/Instant-Weather.git
