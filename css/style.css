@@ -1,7 +1,7 @@
 :root {
   --color-primary: #f5fcfc;
   --color-secondary: rgb(13, 110, 253);
-  --color-font: #ffffff;
+  --color-font: #000000;
   --color-shadow: #0e061c;
 }
 
@@ -46,7 +46,6 @@ h1 {
 #cityForm_form input,
 #cityForm_form select {
   min-width: 280px;
-  /* width: 80%; */
 }
 
 .sr-only {
@@ -108,7 +107,7 @@ h1 {
   margin: 10px 5px;
   padding: 5px;
   background-color: var(--color-secondary);
-  color: var(--color-font);
+  color: white;
   border: 2px solid var(--color-secondary);
   border-radius: 8px;
 }
@@ -134,4 +133,14 @@ h1 {
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+
+/* Styles pour le graphique */
+canvas {
+  max-height: 300px;
+  margin: 0 auto;
+  width: 100% !important;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
 }

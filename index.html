@@ -9,16 +9,12 @@
     <!-- FONT Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <!-- Font Awesome Kit -->
-    <script
-      src="https://kit.fontawesome.com/0acb75a9e8.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/0acb75a9e8.js" crossorigin="anonymous"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script defer src="./js/weatherCard.js"></script>
     <script defer src="./js/app.js"></script>
     <title>Instant Weather</title>
@@ -53,7 +49,7 @@
             >Sélectionnez la commune</label
           >
           <select class="form-select" id="communeSelect"></select>
-          <select hidden class="form-select mt-1" id="dayAmount">
+          <select class="form-select mt-1" id="dayAmount">
             <option selected value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -63,23 +59,23 @@
             <option value="7">7</option>
           </select>
           <div class="mt-3 ps-0 d-flex flex-column text-start">
-            <div class="form-check form-switch" hidden id="div-latitude">
+            <div class="form-check form-switch">
               <input type="checkbox" class="form-check-input" id="latitude" role="switch">
               <label class="form-check-label" for="latitude">Latitude</label>
             </div>
-            <div class="form-check form-switch" hidden id="div-longitude">
+            <div class="form-check form-switch">
               <input type="checkbox" class="form-check-input" id="longitude" role="switch">
               <label class="form-check-label" for="longitude">Longitude</label>
             </div>
-            <div class="form-check form-switch" hidden id="div-cumul">
+            <div class="form-check form-switch">
               <input type="checkbox" class="form-check-input" id="cumul" role="switch">
               <label class="form-check-label" for="cumul">Cumul de pluie</label>
             </div>
-            <div class="form-check form-switch" hidden id="div-vent">
+            <div class="form-check form-switch">
               <input type="checkbox" class="form-check-input" id="vent" role="switch">
               <label class="form-check-label" for="vent">Vent moyen</label>
             </div>
-            <div class="form-check form-switch" hidden id="div-direction">
+            <div class="form-check form-switch">
               <input type="checkbox" class="form-check-input" id="direction" role="switch">
               <label class="form-check-label" for="direction">Direction du vent</label>
             </div>
