@@ -64,7 +64,7 @@ async function fetchMeteoByCommune(selectedCommune, day) {
     let data = [];
     for (let i = 0; i < day; i++) {
       const response = await fetch(
-        `https://api.meteo-concept.com/api/forecast/daily/${i}?token=4bba169b3e3365061d39563419ab23e5016c0f838ba282498439c41a00ef1091&insee=${selectedCommune}`
+        `https://api.meteo-concept.com/api/forecast/daily/${i}?token=b5effdf751f479343bbe8a48834b136e364f071e1f9b7a95aa09c2ad767d4cd9&insee=${selectedCommune}`
       );
       data.push(await response.json());
     }
