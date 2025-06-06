@@ -31,3 +31,6 @@ Application météo en temps réel qui fournit les prévisions météorologiques
 1. Clonez le dépôt :
 ```bash
 git clone https://github.com/PrinceCorg/Instant-Weather.git
+```
+## Lien du site : 
+https://ymeilll.github.io/Instant-Weather-main/ 
