@@ -20,7 +20,6 @@ Application météo en temps réel qui fournit les prévisions météorologiques
   - HTML5, CSS3, JavaScript
   - Bootstrap 5 pour le responsive design
   - Font Awesome pour les icônes
-  - API Google Fonts (Roboto)
 
 - **API externes**:
   - [API découpage administratif](https://geo.api.gouv.fr/decoupage-administratif/communes) pour la recherche des communes
@@ -30,7 +29,7 @@ Application météo en temps réel qui fournit les prévisions météorologiques
 
 1. Clonez le dépôt :
 ```bash
-git clone https://github.com/PrinceCorg/Instant-Weather.git
+git clone https://github.com/YMEILLL/Instant-Weather.git
 ```
 ## Lien du site : 
 https://ymeilll.github.io/Instant-Weather-main/ 
