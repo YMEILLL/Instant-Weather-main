@@ -42,31 +42,31 @@ function createCard(data) {
     if(latitude.checked) {
       dict.push({
         "label": "Latitude",
-        "value": `${element.city.latitude}%`
+        "value": `${element.city.latitude}`
       });
     }
     if(longitude.checked) {
       dict.push({
         "label": "Longitude",
-        "value": `${element.city.longitude}%`
+        "value": `${element.city.longitude}`
       });
     }
     if(cumul.checked) {
       dict.push({
         "label": "Cumul de pluie sur la journée (mm)",
-        "value": `${element.forecast.rr10}%`
+        "value": `${element.forecast.rr10}`
       });
     }
     if(vent.checked) {
       dict.push({
         "label": "Vent moyen à 10m (km/h)",
-        "value": `${element.forecast.wind10m}%`
+        "value": `${element.forecast.wind10m}`
       });
     }
     if(direction.checked) {
       dict.push({
         "label": "Direction du vent en degrés (0 à 360°)",
-        "value": `${element.forecast.dirwind10m}%`
+        "value": `${element.forecast.dirwind10m}`
       });
     }
 
